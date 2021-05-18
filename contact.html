@@ -1,198 +1,87 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>My Form</title>
-<style media="screen">
-  table{
-
-    padding: 20px;
-    margin:auto;
-
-  }
-  th,td{
-    margin: 30px;
-  }
-  .container{
-    width: 50%;
+    <title>My Layout</title>
+  <style media="screen">
+  .main{
+    width:70%;
     padding: 10px;
     margin:auto;
-      border: 1px solid #000000;
-      background: lightpink;
-      border-radius: 5px;
   }
-  input[type=text], input[type=email], input[type=number], input[type=password]{
-    width: 100%;
-    padding: 5px 12px;
-    margin:5px 0;
-    box-sizing:border-box;
-    border-radius: 4px;
+    .header{
+      background-color:lightblue;
+      text-align:center;
+      padding:20px;
+      color:black;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
 
-  }
-  .sex{
-    float: left;
-    text-align: left;
-  }
-  tr.birth{
+    li {
+      float:left;
+    }
+    li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+}
 
+li a:hover {
+    background-color: #111;
+}
 
-  }
-  input[type=radio], input[type=checkbox]{
-    margin: 10px;
-  }
-  input[type=submit]{
-    width:20%;
-    padding:1px;
-    margin: 15px;
-    box-sizing: border-box;
-  }
+.active {
+    background-color: gray;
+}
+.dropmenu {
+  display:none;
+  position:absolute;
+  background-color: #f9f9f9;
+  min-width:150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+.footer{
+  margin-top: 30%;
+}
 
-  }
-  input[type=reset]{
-    width:20%;
-    padding:1px;
-    margin: 15px;
-    box-sizing: border-box;
-  }
-</style>
+  </style>
   </head>
   <body>
-    <div class="container">
-      <form class="" action="index.html" method="post">
-          <table>
-        <tr>
-        <h1 style="text-align:center;">Registraion Form</h1>
-        </tr>
-        <!-- First Name -->
-        <tr>
-       <td>First name: </td>
-       <td><input type="text" name="" value=""></td>
-        </tr>
-            <!-- Last Name -->
-        <tr>
-          <td>Last name:</td>
-          <td><input type="text" name="" value=""></td>
-        </tr>
-          <!-- Age -->
-        <tr>
-        <td>Age:</td>
-        <td><input type="number" name="" value=""></td>
-        </tr>
-          <!-- Email -->
-        <tr>
-        <td>E-mail:</td>
-        <td><input type="email" name="" value=""></td>
-        </tr>
-          <!-- Password -->
-        <tr>
-        <td>Pasword:</td>
-        <td><input type="password" name="" value=""></td>
-        </tr>
-          <!-- Gender  -->
-      <tr>
-      <td class="sex">SEX::</td>
-       <td><input type="radio" name="sex" value="Male">Male
-       <input type="radio" name="sex" value="Female">Female
-      </td>
-      </tr>
-        <!-- Checkbox -->
-      <tr>
-        <td>Checkbox</td>
-       <td>
-       <input type="checkbox" name="" value="">I am student
-        <input type="checkbox" name="" value="">I am a business man
-        </td>
-      </tr>
-        <tr></tr><tr></tr>
-      <tr class="birth">
-        <td></td><td>Birthday:</td>
-      </tr>
-      <tr></tr><tr></tr>  <tr></tr><tr></tr>
-      <tr>
-        <td>Day:
-        <select class="" name="">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">18</option>
-          <option value="19">19</option>
-          <option value="20">20</option>
-          <option value="21">21</option>
-          <option value="22">22</option>
-          <option value="23">23</option>
-          <option value="24">24</option>
-          <option value="25">25</option>
-          <option value="26">26</option>
-          <option value="27">27</option>
-          <option value="28">28</option>
-          <option value="29">29</option>
-          <option value="30">30</option>
-          <option value="31">31</option>
-        </select>
-       </td>
+    <div class="main">
 
-       <td>Month:
-        <select class="" name="">
-          <option value="January"> 1</option>
-          <option value="February">2</option>
-          <option value="March">3</option>
-          <option value="April">4</option>
-          <option value="May">5</option>
-          <option value="June">6</option>
-          <option value="July">7</option>
-          <option value="August">8</option>
-          <option value="September">9</option>
-          <option value="October">10</option>
-          <option value="November">11</option>
-          <option value="December">12</option>
-        </select>
-       </td>
-       <td>Year:
-         <select class="" name="">
-           <option value="2021">2021</option>
-           <option value="2021">2020</option>
-           <option value="2021">2019</option>
-           <option value="2021">2018</option>
-           <option value="2021">2017</option>
-           <option value="2021">2016</option>
-           <option value="2021">2015</option>
-           <option value="2021">2014</option>
-           <option value="2021">2013</option>
-           <option value="2021">2012</option>
-           <option value="2021">2011</option>
-           <option value="2021">2010</option>
-           <option value="2021">2009</option>
-           <option value="2021">2008</option>
-         </select>
-       </td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>
-        Submit Button:<input type="submit" name="" value="Submit">
-        </td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>
-               Reset Button: <input type="reset" name="" value="Reset">
-        </td>
-      </tr>
-        </table>
-      </form>
-</div>
+    <div class="header">
+      <h1>Welcome to My Site</h1>
+    </div>
+    <div class="topnav">
+
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            </li>
+          </ul>
+    </div>
+    <div class="menu">
+       <h1>Contacts Details</h1>
+      <p>+2557880463</p>
+    
+    </div>
+    <div class="footer">
+      <hr>
+      <p>P.O.BOX 5555</p>
+      <p>email linahlawrence4@gmail.com</p>
+      <p>Kigamboni,dar es salaam,Tanzania.</p>
+    </div>
+      </div>
   </body>
 </html>
+</html
